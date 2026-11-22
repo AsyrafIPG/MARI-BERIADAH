@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mari Beriadah – Pendidikan Islam Tahun 4</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Open+Sans:wght@400;600&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--g:#1B8A5A;--o:#F5A623;--bg:#F9FBF9;--card:#fff;--tx:#1d2b24;--soft:#e6f4ec;--red:#c0392b;--redsoft:#fdecea;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101a15;--card:#18271f;--tx:#eaf3ee;--soft:#1d3a2b;--redsoft:#3a1d1a;color-scheme:dark}}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 'Open Sans',Arial,sans-serif}
+h1,h2,h3{font-family:Fredoka,Poppins,sans-serif;color:var(--g);margin:.2em 0}
+.jawi{font-family:'Scheherazade New','Traditional Arabic',serif;font-size:24px;line-height:2;direction:rtl;text-align:right}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--g);padding:6px 8px;display:flex;gap:6px;overflow-x:auto}
+header a{color:#fff;text-decoration:none;padding:8px 14px;border-radius:20px;white-space:nowrap;font-family:Fredoka,sans-serif;font-size:15px}
+header a.on{background:var(--o);color:#1d2b24}
+header a:focus-visible,button:focus-visible{outline:3px solid #fff;outline-offset:2px}
+main{max-width:900px;margin:0 auto;padding:16px}
+.pg{display:none}.pg.on{display:block}
+.hero{background:linear-gradient(160deg,var(--g),#2fae7b);color:#fff;border-radius:20px;padding:28px 20px;text-align:center}
+.hero h1{color:#fff;font-size:clamp(30px,7vw,48px)}
+.hero .em{font-size:44px;letter-spacing:8px}
+.box{background:var(--card);border:2px solid var(--soft);border-radius:16px;padding:16px;margin:14px 0}
+.hl{background:var(--o);color:#1d2b24;border-radius:14px;padding:12px 16px;font-weight:600;font-family:Fredoka,sans-serif;font-size:20px;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:600px){.cols{grid-template-columns:1fr}}
+.ico{background:var(--soft);border-radius:14px;padding:14px;text-align:center}
+.ico b{font-size:28px;display:block}
+button,.btn{font:600 16px Fredoka,sans-serif;background:var(--o);color:#1d2b24;border:0;border-radius:24px;padding:10px 20px;cursor:pointer;text-decoration:none;display:inline-block}
+.aud{background:var(--g);color:#fff;padding:4px 12px;font-size:18px}
+.nav{display:flex;justify-content:space-between;gap:10px;margin:28px 0 12px}
+.nav .btn{font-size:18px;padding:14px 22px}.nav .btn:first-child{background:var(--soft);color:var(--g)}
+.flip{perspective:700px;height:190px;cursor:pointer;border:0;background:none;padding:0;font:inherit;color:inherit}
+.fi{position:relative;width:100%;height:100%;transition:transform .5s;transform-style:preserve-3d}
+.flip.f .fi{transform:rotateY(180deg)}
+.fa,.fb{position:absolute;inset:0;backface-visibility:hidden;border-radius:16px;padding:14px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.fa{background:var(--g);color:#fff;font:700 20px Fredoka,sans-serif}.fa .jawi{color:#fff;text-align:center;direction:rtl;font-size:26px}
+.fb{background:var(--card);border:3px solid var(--o);transform:rotateY(180deg);font-size:15px}
+.good{background:var(--soft);border-left:6px solid var(--g)}.bad{background:var(--redsoft);border-left:6px solid var(--red)}
+.q button.opt{display:block;width:100%;text-align:left;background:var(--soft);color:var(--tx);margin:6px 0;border-radius:12px;font-family:inherit;font-weight:400}
+.opt.ok{background:#27ae60!important;color:#fff}.opt.no{background:var(--red)!important;color:#fff}
+.slot{border:3px dashed var(--o);border-radius:16px;padding:20px;text-align:center;margin:10px 0}
+textarea{width:100%;min-height:90px;border-radius:12px;border:2px solid var(--soft);padding:10px;font:inherit;background:var(--card);color:var(--tx)}
+#wheel{width:min(100%,380px);display:block;margin:0 auto;transition:transform 4s cubic-bezier(.15,.7,.1,1)}
+.pointer{text-align:center;font-size:30px;color:var(--red);margin-bottom:-14px;position:relative;z-index:2}
+.cta{display:block;text-align:center;font-size:20px;padding:18px;margin:24px 0}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header id="tabs"></header>
+<main>
+
+<!-- HALAMAN 1 -->
+<section class="pg" id="utama">
+<div class="hero"><div class="em" aria-hidden="true">🏃‍♂️⚽🕌🚴‍♀️</div>
+<h1>UNIT 2: MARI BERIADAH</h1><p>Pendidikan Islam Tahun 4 · Bidang Adab · Standard Kandungan 6.2</p></div>
+
+<svg viewBox="0 0 600 320" role="img" aria-label="Kartun kanak-kanak bersukan menyambut kedatangan anda" style="width:100%;border-radius:20px;display:block;margin:14px 0"><defs><linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd0ff"/><stop offset="1" stop-color="#d8f3ff"/></linearGradient>
+<g id="kid"><rect x="-17" y="215" width="14" height="45" rx="6" fill="#2b3a55"/><rect x="3" y="215" width="14" height="45" rx="6" fill="#2b3a55"/><rect x="-35" y="165" width="14" height="50" rx="7" fill="var(--c)" transform="rotate(25 -28 168)"/><rect x="21" y="165" width="14" height="50" rx="7" fill="var(--c)" transform="rotate(-25 28 168)"/><rect x="-22" y="160" width="44" height="62" rx="14" fill="var(--c)"/><circle cx="0" cy="138" r="22" fill="#f2c9a0"/><path d="M-22 136Q0 100 22 136Q0 122 -22 136Z" fill="#3b2a20"/><circle cx="-7" cy="138" r="3" fill="#222"/><circle cx="7" cy="138" r="3" fill="#222"/><path d="M-9 147Q0 156 9 147" stroke="#7a3b2e" stroke-width="3" fill="none" stroke-linecap="round"/></g>
+<g id="girl"><rect x="-17" y="215" width="14" height="45" rx="6" fill="#2b3a55"/><rect x="3" y="215" width="14" height="45" rx="6" fill="#2b3a55"/><rect x="-35" y="165" width="14" height="50" rx="7" fill="var(--c)" transform="rotate(25 -28 168)"/><rect x="21" y="165" width="14" height="50" rx="7" fill="var(--c)" transform="rotate(-25 28 168)"/><rect x="-22" y="160" width="44" height="62" rx="14" fill="var(--c)"/><path d="M-27 140Q-28 176 0 180Q28 176 27 140Z" fill="#fff"/><circle cx="0" cy="138" r="27" fill="#fff"/><circle cx="0" cy="141" r="19" fill="#f2c9a0"/><circle cx="-7" cy="139" r="3" fill="#222"/><circle cx="7" cy="139" r="3" fill="#222"/><path d="M-9 148Q0 157 9 148" stroke="#7a3b2e" stroke-width="3" fill="none" stroke-linecap="round"/></g></defs>
+<rect width="600" height="320" fill="url(#sk)"/><circle cx="530" cy="50" r="30" fill="#ffd34d"/><g fill="#fff"><ellipse cx="70" cy="70" rx="40" ry="16"/><ellipse cx="100" cy="62" rx="28" ry="16"/></g>
+<path d="M0 250Q150 225 300 250T600 245V320H0Z" fill="#4fbf6f"/><rect y="268" width="600" height="52" fill="#3aa65d"/>
+<g transform="translate(470,120)"><rect x="0" y="60" width="110" height="90" fill="#fff6dc"/><path d="M10 60Q55 -5 100 60Z" fill="#1B8A5A"/><rect x="52" y="-18" width="6" height="20" fill="#F5A623"/><rect x="-18" y="30" width="16" height="120" fill="#fff6dc"/><path d="M-20 30L-10 8L0 30Z" fill="#1B8A5A"/><rect x="40" y="100" width="30" height="50" rx="15" fill="#1B8A5A"/></g>
+<use href="#kid" x="130" style="--c:#F5A623"/><use href="#girl" x="230" style="--c:#1B8A5A"/><use href="#kid" x="330" style="--c:#3b82b8"/>
+<circle cx="410" cy="258" r="15" fill="#fff" stroke="#222" stroke-width="2"/><path d="M410 250l7 5-3 8h-8l-3-8z" fill="#222"/>
+<text x="290" y="54" text-anchor="middle" font-family="Fredoka,sans-serif" font-size="40" font-weight="700" fill="#1B8A5A" stroke="#fff" stroke-width="6" paint-order="stroke">Selamat Datang!</text><text x="290" y="88" text-anchor="middle" font-family="Fredoka,sans-serif" font-size="22" fill="#1d2b24" stroke="#fff" stroke-width="4" paint-order="stroke">Jom beriadah bersama-sama</text></svg>
+
+<div class="box"><h2>Objektif pembelajaran</h2><p>Pada akhir pembelajaran ini, murid dapat:</p>
+<div class="grid">
+<div class="ico"><b>📖</b>Menyatakan maksud riadah (6.2.1)</div>
+<div class="ico"><b>☪️</b>Menerangkan hukum beriadah berdasarkan dalil naqli (6.2.2)</div>
+<div class="ico"><b>🧼</b>Menjelaskan dan mengaplikasikan adab beriadah yang menepati syarak (6.2.3 &amp; 6.2.4)</div>
+<div class="ico"><b>🌟</b>Menganalisis kepentingan adab beriadah serta mencontohi sunnah Rasulullah SAW (6.2.5 – 6.2.7)</div></div></div>
+
+<div class="box" style="background:var(--soft)"><h3>Panduan aksesibiliti</h3>
+<p>Klik ikon pembesar suara 🔊 di setiap nota untuk mendengar bacaan audio. Baca teks Rumi di bawah teks Jawi jika memerlukan bantuan.</p></div>
+<div class="nav"><span></span><a class="btn" href="#riadah">Halaman Seterusnya →</a></div>
+</section>
+
+<!-- HALAMAN 2 -->
+<section class="pg" id="riadah">
+<h1>1. Kenali Riadah &amp; Hukumnya</h1>
+<div class="box"><h2>Maksud riadah <button class="aud" data-s="Riadah ialah gerak badan, senaman atau segala kegiatan yang dilakukan pada waktu lapang untuk menyihatkan badan seperti bersenam, bermain dan berekreasi." aria-label="Dengar">🔊</button></h2>
+<div class="cols"><div class="jawi">رياضه ایاله کرق بادن، سنمن اتاو سݢالا کݢياتن يڠ دلاكوكن ڤد وقتو لاڤڠ اونتوق مڽيحتكن بادن سڤرتي برسنم، برماءين دان بريكرياسي.</div>
+<div><em>Riadah ialah gerak badan, senaman atau segala kegiatan yang dilakukan pada waktu lapang untuk menyihatkan badan seperti bersenam, bermain dan berekreasi.</em></div></div>
+<div class="grid" style="margin-top:12px"><div class="ico"><b>🏊</b>Berenang</div><div class="ico"><b>🏹</b>Memanah</div><div class="ico"><b>🐎</b>Berkuda</div><div class="ico"><b>🚲</b>Berbasikal</div></div></div>
+
+<div class="box"><div class="hl">Hukum beriadah: HARUS dan DIGALAKKAN dalam Islam</div>
+<h3>Dalil hadis <button class="aud" data-ar="1" data-s="عَنْ أَبِي هُرَيْرَةَ رَضِيَ اللَّهُ عَنْهُ قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: الْمُؤْمِنُ الْقَوِيُّ خَيْرٌ وَأَحَبُّ إِلَى اللَّهِ مِنَ الْمُؤْمِنِ الضَّعِيفِ" aria-label="Dengar hadis">🔊</button></h3>
+<div class="jawi">عَنْ أَبِي هُرَيْرَةَ رَضِيَ اللَّهُ عَنْهُ قَالَ: قَالَ رَسُولُ اللَّهِ ﷺ: <b>«الْمُؤْمِنُ الْقَوِيُّ خَيْرٌ وَأَحَبُّ إِلَى اللَّهِ مِنَ الْمُؤْمِنِ الضَّعِيفِ»</b> (رواه مسلم)</div>
+<div class="jawi">مقصودث: اورڠ برايمان يڠ قوات لبيه باءيق دان لبيه دسوكاءي اوليه الله درڤد اورڠ برايمان يڠ لمه.</div>
+<p><em>Maksudnya: Orang beriman yang kuat lebih baik dan lebih disukai oleh Allah daripada orang beriman yang lemah.</em></p></div>
+
+<div class="box"><h2>Sudut tazkirah: kata-kata Saidina Umar al-Khattab</h2>
+<p><em>“Ajarlah anak-anak kamu memanah, menunggang kuda dan juga berenang.”</em></p>
+<div class="grid"><div class="ico"><b>🏹</b>Memanah<div class="jawi" style="text-align:center">الرِّمَايَةَ</div></div><div class="ico"><b>🐎</b>Menunggang kuda<div class="jawi" style="text-align:center">رُكُوبَ الْخَيْلِ</div></div><div class="ico"><b>🏊</b>Berenang<div class="jawi" style="text-align:center">السِّبَاحَةَ</div></div></div></div>
+
+<div class="box q" id="quiz1"><h2>Semak pantas</h2><div id="qz"></div></div>
+<div class="nav"><a class="btn" href="#utama">← Halaman Sebelumnya</a><a class="btn" href="#adab">Halaman Seterusnya →</a></div>
+</section>
+
+<!-- HALAMAN 3 -->
+<section class="pg" id="adab">
+<h1>2. Adab-adab Beriadah</h1>
+<div class="box"><h2>Kisah teladan: Adab dipupuk, sukan seronok <button class="aud" data-s="Faruq murid tahun 4 ialah wakil bola sepak sekolah. Setiap petang Khamis, Faruq berlatih bersama rakan di padang sekolah. Ketika beriadah mereka sentiasa mengamalkan adab beriadah seperti menjaga kebersihan, menutup aurat, memelihara semangat kesukanan serta memilih kawasan yang sesuai dan selamat. Apabila masuk waktu solat, mereka tidak lupa mengingati Allah dengan menunaikan solat berjemaah di surau berdekatan." aria-label="Dengar kisah">🔊</button></h2>
+<p>Klik 🔊 pada setiap panel, atau tekan butang untuk mendengar seluruh kisah.</p><div id="komik"></div></div>
+
+<div class="box"><h2>6 adab beriadah yang menepati syarak</h2><p>Klik kad untuk melihat huraian.</p><div class="grid" id="flips"></div></div>
+<div class="box q" id="quiz3"><h2>Semak pantas: adab beriadah</h2><div id="qz3"></div></div>
+<div class="nav"><a class="btn" href="#riadah">← Halaman Sebelumnya</a><a class="btn" href="#boria">Halaman Seterusnya →</a></div>
+</section>
+
+<!-- HALAMAN 4 -->
+<section class="pg" id="boria">
+<h1>3. Mari Berboria</h1>
+<div class="box"><h2>Boria: Kepentingan Adab Beriadah</h2><div id="boriaVid"></div><p><small>Paparkan lirik Jawi dan Rumi serentak pada skrin video (gaya karaoke).</small></p></div>
+
+<div class="box"><h2>Lirik boria (Jawi &amp; Rumi)</h2>
+<div id="lirik"></div></div>
+
+<div class="box"><h2>Peta minda: kepentingan dan akibat</h2>
+<div class="cols">
+<div class="box good"><h3>Kebaikan beradab</h3><ul><li>Badan sihat dan kuat</li><li>Keselamatan terjamin</li><li>Mendapat pahala</li><li>Mengeratkan perpaduan kaum: Melayu, Cina, India, Iban, Bidayuh</li><li>Mengukuhkan iman</li></ul></div>
+<div class="box bad"><h3 style="color:var(--red)">Akibat mengabaikan adab</h3><ul><li>Berisiko cedera atau kemalangan</li><li>Berlaku pergaduhan dan sengketa</li><li>Melalaikan waktu solat</li><li>Hilang keberkatan</li></ul></div></div></div>
+<div class="box q"><h2>Semak pantas: kepentingan adab</h2><div id="qz4"></div></div>
+<div class="nav"><a class="btn" href="#adab">← Halaman Sebelumnya</a><a class="btn" href="#aktiviti">Halaman Seterusnya →</a></div>
+</section>
+
+<!-- HALAMAN 5 -->
+<section class="pg" id="aktiviti">
+<h1>4. Minda Cerdas &amp; Roda Bestari</h1>
+<div class="box"><h2>Aktiviti 1: Minda Cerdas</h2>
+<svg viewBox="0 0 600 280" role="img" aria-label="Kanak-kanak bermain bola di jalan raya ketika azan Maghrib" style="width:100%;border-radius:16px;display:block;margin:10px 0"><rect width="600" height="280" fill="#f7b267"/><circle cx="90" cy="60" r="34" fill="#ffd34d"/><rect y="190" width="600" height="90" fill="#555"/><path d="M0 235H600" stroke="#fff" stroke-width="5" stroke-dasharray="30 24"/><rect y="170" width="600" height="22" fill="#4fbf6f"/><g transform="translate(440,30)"><rect y="60" width="110" height="90" fill="#fff6dc"/><path d="M10 60Q55 -5 100 60Z" fill="#1B8A5A"/><rect x="52" y="-18" width="6" height="20" fill="#F5A623"/><rect x="40" y="100" width="30" height="50" rx="15" fill="#1B8A5A"/></g><text x="520" y="165" font-size="34">🛝</text><ellipse cx="300" cy="40" rx="105" ry="26" fill="#fff"/><text x="300" y="50" text-anchor="middle" font-size="26" font-family="Scheherazade New,serif">اللَّهُ أَكْبَرُ اللَّهُ أَكْبَرُ</text><g transform="translate(0,20)"><g transform="translate(130,0) scale(.8)"><use href="#kid" style="--c:#F5A623"/></g><g transform="translate(220,0) scale(.8)"><use href="#kid" style="--c:#3b82b8"/></g><g transform="translate(310,0) scale(.8)"><use href="#kid" style="--c:#1B8A5A"/></g></g><circle cx="390" cy="255" r="14" fill="#fff" stroke="#222" stroke-width="2"/></svg><div class="ico" style="font-size:18px"><b>⚽🛣️🕌</b>Sekumpulan kanak-kanak bermain bola sepak di atas jalan raya ketika azan Maghrib berkumandang. Taman permainan kosong terdapat berhampiran masjid.<br><strong>اللَّهُ أَكْبَرُ اللَّهُ أَكْبَرُ</strong></div>
+<ol><li>Nyatakan kesalahan adab yang terdapat dalam gambar tersebut.</li><li>Apakah tindakan sepatutnya yang perlu mereka ambil?</li><li><em>Pengayaan:</em> Jika rakan mengajak kamu bermain di tepi jalan raya, bagaimanakah cara terbaik untuk kamu menasihatinya?</li></ol>
+<p><button id="jwb">💡 Lihat jawapan cadangan</button></p><div id="jwbBox" class="box good" style="display:none"><ol><li>Bermain bola di jalan raya (tidak selamat) dan terus bermain ketika azan Maghrib berkumandang.</li><li>Berhenti bermain, beredar ke padang atau taman yang selamat, kemudian bersiap dan solat berjemaah.</li><li>Nasihati dengan lembut: “Jalan raya bahaya. Jom main di taman dan kita solat dahulu bila azan.”</li></ol></div><div id="padlet"></div>
+<h3>Ruang jawapan sementara</h3><textarea aria-label="Jawapan" placeholder="Taip jawapan kamu di sini…"></textarea></div>
+
+<div class="box"><h2>Aktiviti 2: Roda Bestari</h2><p>Tekan butang untuk memusing roda, kemudian jawab soalan yang keluar.</p>
+<div class="pointer" aria-hidden="true">▼</div><svg id="wheel" viewBox="-110 -110 220 220" role="img" aria-label="Roda bestari"></svg>
+<p style="text-align:center"><button id="spin">Pusing roda!</button></p>
+<div class="box" id="res" aria-live="polite" style="display:none"></div></div>
+
+<div class="box"><h2>Penilaian laman pembelajaran</h2><div id="gform"></div></div>
+<div class="nav"><a class="btn" href="#boria">← Halaman Sebelumnya</a><span></span></div>
+</section>
+</main>
+
+<script>
+/* Isi URL di sini. Biarkan kosong untuk memaparkan ruang kosong. */
+const CONFIG={
+ videoBoria:"https://youtu.be/NlSz1bJb1TI", padlet:"https://padlet.com/embed/s025ovikucl1iwui8ev5", gform:"https://docs.google.com/forms/d/e/1FAIpQLScBG3rnfMO6wdxWmIrUrXV0GIQkiA-hsNkizB9xBSXL-pnYKA/viewform?usp=sharing", komik:""
+};
+/* Tampal lirik boria (m/s 171) di sini: {jawi:"...",rumi:"..."} per rangkap */
+const LIRIK=[
+{jawi:"ماري ... ماريله كيت برسوكن دغن برادب كيت الكوكن برنغ، ممانه سنّه دعملكن بوال جاريغ، بوال سيفق، سموا كيت الين."},
+{jawi:"براونتوغ بنر مريك برسوكن بادن صيحت قوات فثاكيت دهيندركن كسالمتن ترجامين ماس سوكن ماس دأيسي تنفا مالاليكن."},
+{jawi:"فهاال دافت ايمان فون قوات اومت دمولياكن دفندغ حرمت تيفو، رسواه، ضادوه دهافوسكن فرفادوان كوكوه سغكيتا دجاءوهكن."},
+{jawi:"سوكن دعملكن فلباضاي بغسا ماليو، چينا، اينديا، ايبن، بيدايوه جوض ماري اديق كاكق، توان فوان سموا، تيدق كيرا اوسيا توا اتاوفون مودا."}
+];
+
+const PAGES=[["utama","Utama"],["riadah","1. Kenali Riadah"],["adab","2. Adab Beriadah"],["boria","3. Mari Berboria"],["aktiviti","4. Minda Cerdas & Roda Bestari"]];
+const $=s=>document.querySelector(s);
+$("#tabs").innerHTML=PAGES.map(p=>`<a href="#${p[0]}" data-p="${p[0]}">${p[1]}</a>`).join("");
+function route(){
+ const h=(location.hash||"#utama").slice(1);const id=PAGES.some(p=>p[0]===h)?h:"utama";
+ document.querySelectorAll(".pg").forEach(e=>e.classList.toggle("on",e.id===id));
+ document.querySelectorAll("#tabs a").forEach(a=>a.classList.toggle("on",a.dataset.p===id));
+ scrollTo(0,0);
+}
+addEventListener("hashchange",route);route();
+
+function slot(el,url,label,h){
+ el.innerHTML=url?`<div class="slot"><p style="font-size:18px;margin:0 0 12px">${label}</p><a class="btn cta" style="margin:0" href="${url}" target="_blank" rel="noopener">${h?"📝 Buka papan Padlet":"▶️ Tonton video"}</a></div>`
+ :`<div class="slot">📌 ${label}<br><small>Letakkan pautan dalam CONFIG untuk memaparkan di sini.</small></div>`;
+}
+
+slot($("#boriaVid"),CONFIG.videoBoria,"Video persembahan Boria guru");
+slot($("#padlet"),CONFIG.padlet,"Papan Padlet: taip atau rakam jawapan",608);
+$("#gform").innerHTML=`<a class="btn cta" ${CONFIG.gform?`href="${CONFIG.gform}" target="_blank" rel="noopener"`:'href="#aktiviti" aria-disabled="true"'}>KLIK DI SINI UNTUK MENILAI LAMAN PEMBELAJARAN INI</a>`+(CONFIG.gform?"":'<p style="text-align:center"><small>Letakkan pautan Google Form dalam CONFIG.gform.</small></p>');
+$("#lirik").innerHTML=LIRIK.length?LIRIK.map((l,i)=>`<div class="box" style="background:var(--soft)"><b>Rangkap ${i+1}</b><div class="jawi">${l.jawi}</div>${l.rumi?`<p><em>${l.rumi}</em></p>`:""}</div>`).join(""):'<div class="slot">Tampal 4 rangkap lirik boria dari buku teks m/s 171 dalam pembolehubah LIRIK.</div>';
+
+/* Audio */
+document.addEventListener("click",e=>{const b=e.target.closest(".aud");if(!b)return;
+ try{speechSynthesis.cancel();speakTxt(b.dataset.s,b.dataset.ar?"ar":"ms")}catch(x){}});
+
+/* Flipcards */
+const ADAB=[
+["Menutup aurat","منوتوف عورة","Memakai pakaian sukan yang sopan dan menutup aurat."],
+["Menjaga kebersihan","منجاݢ كبرسيهن","Tidak membuang sampah merata-rata di kawasan riadah."],
+["Memilih kawasan selamat","ممليه كاوسن يڠ سسواي دان سلامت","Beriadah di padang atau taman yang sesuai, bukan di jalan raya."],
+["Menjaga waktu solat","منجاݢ وقتو صلاة","Berhenti beriadah apabila masuk waktu solat dan menunaikannya, seperti Faruq solat berjemaah di surau."],
+["Memelihara semangat kesukanan","ممليهارا سماڠت كسوكنن","Tidak bergaduh, bermain secara adil, dan menghormati rakan serta lawan."],
+["Menjauhi amalan negatif","منجاءوهي عملن نيݢاتيف","Mengelakkan pembaziran, unsur judi dan rasuah dalam sukan."]];
+$("#flips").innerHTML=ADAB.map(a=>`<button class="flip" aria-label="Adab: ${a[0]}"><div class="fi"><div class="fa"><span>${a[0]}</span>${a[1]?`<span class="jawi">${a[1]}</span>`:""}</div><div class="fb">${a[2]}</div></div></button>`).join("");
+document.querySelectorAll(".flip").forEach(f=>f.onclick=()=>f.classList.toggle("f"));
+
+/* Semak pantas */
+const QZ=[
+{q:"Apakah maksud riadah?",o:["Gerak badan atau kegiatan masa lapang untuk menyihatkan badan","Tidur pada waktu petang","Menonton televisyen"],a:0},
+{q:"Apakah hukum beriadah dalam Islam?",o:["Haram","Harus dan digalakkan","Makruh"],a:1},{q:"Mukmin yang kuat lebih disukai Allah daripada mukmin yang…",o:["Lemah","Kaya","Tua"],a:0},{q:"Sukan yang disebut oleh Umar al-Khattab ialah…",o:["Memanah, menunggang kuda dan berenang","Tinju sahaja","Permainan video"],a:0},{q:"Bilakah riadah dilakukan?",o:["Ketika waktu lapang","Ketika azan berkumandang","Ketika waktu belajar"],a:0}];
+let qi=0,sc=0;
+function showQ(){const z=$("#qz");if(qi>=QZ.length){z.innerHTML=`<div class="hl">Skor kamu: ${sc}/${QZ.length} ${sc==QZ.length?"🎉 Hebat!":"Cuba lagi!"}</div><p><button id="rq">Cuba semula</button></p>`;$("#rq").onclick=()=>{qi=0;sc=0;showQ()};return}
+ const c=QZ[qi];z.innerHTML=`<p><b>${qi+1}. ${c.q}</b></p>`+c.o.map((t,i)=>`<button class="opt" data-i="${i}">${t}</button>`).join("");
+ z.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{const ok=+b.dataset.i===c.a;if(ok)sc++;
+  z.querySelectorAll(".opt").forEach(x=>{x.disabled=true;if(+x.dataset.i===c.a)x.classList.add("ok")});if(!ok)b.classList.add("no");
+  setTimeout(()=>{qi++;showQ()},1200)})}
+showQ();
+
+/* Tambahan interaktif */
+let warned=false;
+function pickVoice(l){const v=speechSynthesis.getVoices();const f=p=>v.find(x=>x.lang.toLowerCase().replace("_","-").startsWith(p));return l=="ar"?f("ar"):(f("ms")||f("id"))}
+function speakTxt(t,l,cb){const u=new SpeechSynthesisUtterance(t),v=pickVoice(l);if(v){u.voice=v;u.lang=v.lang}else{u.lang=l=="ar"?"ar-SA":"ms-MY";if(!warned){warned=true;alert(l=="ar"?"Peranti ini tiada suara Bahasa Arab.":"Peranti ini tiada suara Bahasa Melayu. Tambah suara Melayu di Tetapan > Bahasa > Teks-ke-ucapan, kemudian cuba lagi.")}}u.rate=.85;if(cb)u.onstart=cb;speechSynthesis.speak(u)}
+try{speechSynthesis.getVoices()}catch(x){}
+document.body.insertAdjacentHTML("afterbegin",'<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>'+$("#kid").outerHTML+$("#girl").outerHTML+'</defs></svg>');
+const PN=[["Faruq, murid Tahun 4, ialah wakil bola sepak sekolah.",[70],["⚽",150,138,26]],["Setiap petang Khamis, dia berlatih bersama rakan di padang sekolah.",[45,100,155],["⚽",178,140,22]],["Mereka menutup aurat, menjaga kebersihan dan bermain adil.",[60,105],["🗑️",150,128,34]],["Apabila masuk waktu solat, mereka berhenti dan solat berjemaah di surau.",[40,85],["🕌",120,115,60]]];
+const CL=["#3b82b8","#F5A623","#1B8A5A"];
+$("#komik").innerHTML='<div class="grid">'+PN.map((p,i)=>`<div class="ico" id="pn${i}" style="padding:0;overflow:hidden"><svg viewBox="0 0 200 150" role="img" aria-label="Panel ${i+1}" style="display:block;width:100%"><rect width="200" height="150" fill="${i==3?"#f7b267":"#bfe9ff"}"/><rect y="118" width="200" height="32" fill="#4fbf6f"/>${p[1].map((x,j)=>`<g transform="translate(${x},0) scale(.55)"><use href="#${i==1&&j==1?"girl":"kid"}" style="--c:${CL[j%3]}"/></g>`).join("")}<text x="${p[2][1]}" y="${p[2][2]}" font-size="${p[2][3]}">${p[2][0]}</text></svg><div style="padding:10px"><b>Panel ${i+1}</b><br>${p[0]} <button class="aud" data-s="${p[0]}" aria-label="Dengar">🔊</button></div></div>`).join("")+'</div><p><button id="baca">▶️ Baca semua panel</button></p>';
+$("#baca").onclick=()=>{try{speechSynthesis.cancel();PN.forEach((p,i)=>{speakTxt(p[0],"ms",()=>{document.querySelectorAll("[id^=pn]").forEach(e=>e.style.outline="");$("#pn"+i).style.outline="4px solid #F5A623"})})}catch(x){}};
+$("#jwb").onclick=()=>$("#jwbBox").style.display="block";
+function mkQuiz(id,Q){const z=$("#"+id);let i=0,s=0;(function r(){if(i>=Q.length){z.innerHTML=`<div class="hl">Skor kamu: ${s}/${Q.length} ${s==Q.length?"🎉 Hebat!":"Cuba lagi!"}</div><p><button>Cuba semula</button></p>`;z.querySelector("button").onclick=()=>{i=0;s=0;r()};return}const c=Q[i];z.innerHTML=`<p><b>${i+1}. ${c.q}</b></p>`+c.o.map((t,k)=>`<button class="opt" data-i="${k}">${t}</button>`).join("");z.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{const ok=+b.dataset.i===c.a;if(ok)s++;z.querySelectorAll(".opt").forEach(x=>{x.disabled=true;if(+x.dataset.i===c.a)x.classList.add("ok")});if(!ok)b.classList.add("no");setTimeout(()=>{i++;r()},1200)})})()}
+mkQuiz("qz3",[{q:"Pakaian sukan yang betul ialah…",o:["Menutup aurat","Ketat dan singkat","Tidak dipedulikan"],a:0},{q:"Apakah tindakan apabila azan berkumandang ketika bermain?",o:["Terus bermain","Berhenti dan solat","Main lima minit lagi"],a:1},{q:"Tempat yang selamat untuk beriadah ialah…",o:["Jalan raya","Padang atau taman","Tepi sungai deras"],a:1},{q:"Semangat kesukanan bermaksud…",o:["Bergaduh apabila kalah","Bermain adil dan menghormati lawan","Menyalahkan rakan"],a:1}]);
+mkQuiz("qz4",[{q:"Apakah kebaikan beradab ketika beriadah?",o:["Badan sihat dan perpaduan","Banyak cedera","Hilang keberkatan"],a:0},{q:"Apakah akibat mengabaikan adab?",o:["Mendapat pahala","Berisiko cedera dan bergaduh","Badan lebih kuat"],a:1},{q:"Boria menyebut pelbagai kaum bersukan bersama. Ini melambangkan…",o:["Perpaduan","Perpecahan","Persaingan"],a:0},{q:"Yang manakah sukan sunnah?",o:["Memanah","Berjudi","Melepak"],a:0}]);
+const RA=["Harus dan digalakkan dalam Islam.","Contoh: menutup aurat, menjaga kebersihan atau menjaga waktu solat.","Badan sihat dan kuat, mendapat pahala, keselamatan terjamin.","Mengeratkan perpaduan pelbagai kaum dan melahirkan rakyat sihat untuk membangunkan negara.","Contoh: bergaduh, tidak menutup aurat, meninggalkan solat atau bermain di jalan raya.","Memanah, menunggang kuda atau berenang.","Berisiko cedera, berlaku pergaduhan, melalaikan solat dan hilang keberkatan.","Menerima dengan reda, mengucapkan tahniah dan berusaha lebih gigih."];
+
+/* Roda Bestari */
+const RB=[["Apakah hukum melakukan riadah?",2,"#f1e45c"],["Sebutkan satu adab riadah yang menepati syarak.",4,"#f5a85a"],["Nyatakan satu kepentingan adab beriadah terhadap individu.",6,"#9ccc65"],["Terangkan satu kepentingan adab beriadah terhadap negara.",8,"#7e57a8"],["Nyatakan satu perbuatan yang salah ketika melakukan riadah.",2,"#3b82b8"],["Sebutkan satu sukan yang dianjurkan dalam Islam.",4,"#e8504f"],["Nyatakan akibat tidak mengamalkan riadah yang menepati syarak.",6,"#f4a3b5"],["Apakah tindakan kamu sekiranya menerima kekalahan?",8,"#4fb3e8"]];
+const W=$("#wheel"),n=RB.length,A=2*Math.PI/n;
+W.innerHTML=`<g id="wg">`+RB.map((r,i)=>{const a0=i*A-Math.PI/2,a1=(i+1)*A-Math.PI/2,am=(a0+a1)/2;
+ return `<path d="M0 0L${100*Math.cos(a0)} ${100*Math.sin(a0)}A100 100 0 0 1 ${100*Math.cos(a1)} ${100*Math.sin(a1)}Z" fill="${r[2]}" stroke="#fff" stroke-width="2"/><text x="${65*Math.cos(am)}" y="${65*Math.sin(am)}" text-anchor="middle" dominant-baseline="middle" font-family="Fredoka" font-size="14" fill="#1d2b24" font-weight="700">${i+1}</text>`}).join("")+`</g><circle r="12" fill="#fff"/>`;
+let rot=0,busy=false;
+$("#spin").onclick=()=>{if(busy)return;busy=true;const k=Math.floor(Math.random()*n);
+ rot+=360*5+(360-(k+.5)*360/n)-(rot%360);W.style.transform=`rotate(${rot}deg)`;$("#res").style.display="none";
+ setTimeout(()=>{const r=RB[k];const e=$("#res");e.style.display="block";e.innerHTML=`<h3>Soalan ${k+1} · ${r[1]} markah</h3><p style="font-size:20px">${r[0]}</p><textarea aria-label="Jawapan" placeholder="Taip jawapan…"></textarea><p><button id="sj">💡 Semak jawapan cadangan</button></p><p id="sjt" class="hl" style="display:none">${RA[k]}</p>`;$("#sj").onclick=()=>$("#sjt").style.display="block";busy=false},4100)};
+</script>
+</body>
+</html>
